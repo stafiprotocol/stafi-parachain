@@ -57,9 +57,9 @@ where
 pub fn rococo_testnet_config(id: ParaId) -> ChainSpec {
 	ChainSpec::from_genesis(
 		// Name
-		"Rococo Testnet",
+		"Stafi PC1",
 		// ID
-		"rococo_testnet",
+		"stafi_pc1",
 		ChainType::Local,
 		move || {
 			testnet_genesis(
@@ -78,7 +78,7 @@ pub fn rococo_testnet_config(id: ParaId) -> ChainSpec {
 		None,
 		properties(),
 		Extensions {
-			relay_chain: "rococo-testnet".into(),
+			relay_chain: "polkadot".into(),
 			para_id: id.into(),
 		},
 	)
